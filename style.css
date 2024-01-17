@@ -69,13 +69,12 @@ input{
     width: 300px;
 }
 input[type="radio"]{
-    display: block;
-    width: 100px;
-    margin: 20px 0 10px 0;
+    width: 25px;
 }
 input[type="submit"]{
-    width: 25px;
-
+    display: block;
+    margin: 20px 0 10px 0;
+    width: 100px;
 }
 footer{
     height: 40px;
