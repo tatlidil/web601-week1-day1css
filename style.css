@@ -37,10 +37,7 @@ nav{
 main{
     margin: 50px;
 }
-mai #album #photo img{
-    width: 400px;
 
-}
 main h1{
     color: rgb(129, 141, 179);
     font-family: arial;
@@ -78,6 +75,12 @@ input[type="submit"]{
     display: block;
     margin: 20px 0 10px 0;
     width: 100px;
+    
+}
+
+main #album #photo img {
+    width: 400px;
+
 }
 footer{
     height: 40px;

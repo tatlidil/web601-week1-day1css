@@ -32,6 +32,7 @@
                     <li id="photo"><img src="images/winterland6.jpg" alt=""></li>
                 -->
                 </ul>
+                
             </main> 
 
             <footer> &copy; Copyright 2020</footer>
@@ -41,17 +42,22 @@
             var fileNames=[];
             var imageList=[];
             var image;
-            var openList; "<li id='photo'>";
+            var openList = "<li id='photo'>";
             var closeList= "</li>"
 
-            for (var i=0; i<6; i++){
+            for (var i=0; i<10; i++){
                 fileNames.push("winterland" + (i+1));
-                photos.push("<img src='images"+ fileNames[i]+".jpg'");
+                photos.push("<img src='images/"+ fileNames[i]+".jpg'");
                 image=openList+photos[i]+closeList;
                 imageList.push(image);
             }
 
             document.getElementById("album").innerHTML=imageList;
+            
+           
+
+
+        
         </script>
     </body>
 </html>
