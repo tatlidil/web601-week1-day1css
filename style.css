@@ -82,6 +82,54 @@ main #album #photo img {
     width: 400px;
 
 }
+
+#album li {
+    position: relative;
+    cursor: pointer;
+    width: 400px; /* Set the width of the list items */
+    margin-bottom: 20px; /* Optional: space between items */
+    display: inline-block; /* If you want images in a line, otherwise block */
+}
+
+#album li img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.description {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    visibility: hidden;
+    transform: translate(-50%, -50%);
+    top: 50%; 
+    left: 50%; 
+    width: relative;
+    height: 10%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    text-align: center;
+}
+
+#album li:hover .description {
+    visibility: visible;
+}
+
+#album img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
 footer{
     height: 40px;
     background-color: rgb(129, 141, 179);
