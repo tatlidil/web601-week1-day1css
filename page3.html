@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Third Web Page</title>
+        <title>LA Pet Adoption</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <!-- Container to wrap everything-->
         <div id="container">
             <!-- Brand of website -->
-            <header>My Web Site Brand</header>
+            <header>LA Pet Adoption</header>
             <!-- Main navigation-->
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="page2.html">About</a></li>
-                    <li><a href="page4.html">Gallery</a></li>
                     <li><a href="page3.html">Contact</a></li>
+                    <li><a href="page4.html">Gallery</a></li>
                 </ul>
             </nav> 
 
             <main>
-                <h1>My Third Heading</h1>
-                <p>My third paragraph.</p>
+                <h1>Tell us more about you!</h1>
+                <p>Fill the form below to apply for your new best friend forever!</p>
                 <form action="/signup" method="post">
                     <fieldset>
-                        <legend>User personal information</legend>
+                        <legend>Family qualification form.</legend>
                         <label>Enter your full name</label>
                         <input type="text" name="name">
                         <label>Enter your email</label>
                         <input type="email" name="email">
                         <label>Enter your phone</label>
                         <input type="text" name="phone">
-                        <label>Select your gender</label>
-                        <input type="radio" name="gender" value="male">Male
-                        <input type="radio" name="gender" value="female">Female
+                        <label>Did you adopt pet before?</label>
+                        <input type="radio" name="petcheck" value="yes">Yes
+                        <input type="radio" name="petcheck" value="no">No
                         <label>How should we contact you?</label>
                         <select>
                             <option>Email</option>
                             <option>Phone</option>
                         </select>
-                        <label>Tell us reason of your visit today:</label>
+                        <label>Tell us more about you and why do you decide adopt a pet?</label>
                         <textarea cols="30" rows="5"></textarea>
-                        <input type="submit" value="Sign Up">
+                        <input type="submit" value="Submit">
                     </fieldset>
                 </form>
             </main> 
