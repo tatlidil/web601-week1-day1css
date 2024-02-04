@@ -41,3 +41,25 @@ document.addEventListener('DOMContentLoaded', function() {
         infoBox.style.visibility = 'hidden';
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var contactOption = document.getElementById('contactOption');
+
+    contactOption.addEventListener('change', function() {
+        var selectedOption = this.value;
+        var emailInput = document.getElementById('emailInput');
+        var phoneInput = document.getElementById('phoneInput');
+
+        // Hide all input fields initially
+        emailInput.style.display = 'none';
+        phoneInput.style.display = 'none';
+
+        // Show the selected input field
+        if (selectedOption === 'email') {
+            emailInput.style.display = 'block';
+        } else if (selectedOption === 'phone') {
+            phoneInput.style.display = 'block';
+        }
+    });
+});
