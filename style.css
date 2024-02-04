@@ -157,14 +157,26 @@ main #album #photo img {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 60%;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.8); /* blakc background with 80% opacity */
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     z-index: 1000; /* Ensure it's above other elements */
     text-align: center;
+    color: #ffffff; /* white text color */
+}
+#infoTitle {
+    text-align: left; /* Ensure title aligns to the left */
+    margin-bottom: 20px; /* Add some space between title and text */
 }
 
+#infoClose {
+    color: yellow; /* Make close text yellow */
+    cursor: pointer; /* Change cursor to pointer to indicate clickable */
+    display: inline-block; /* Make sure it's inline */
+    margin-top: 20px; /* Space from the content above */
+    text-decoration: none; font-size: large; /* Remove underline from link */
+}
 
 footer{
     height: 40px;
