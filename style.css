@@ -78,6 +78,29 @@ input[type="submit"]{
     
 }
 
+.adoption-steps {
+    list-style-type: none;
+    padding: 0px;
+    padding-bottom: 30px;
+}
+
+.adoption-steps li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 5px solid #007bff;
+}
+
+.adoption-steps li strong {
+    color: #007bff;
+    margin-bottom: 10px;
+
+}
+
+ol.adoption-steps li {
+    margin-bottom: 30px;
+}
+
 main #album #photo img {
     width: 400px;
 
