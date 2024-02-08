@@ -151,6 +151,60 @@ main #album #photo img {
     display: block;
 }
 
+/* Lightbox Overlay */
+.backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay for contrast */
+    z-index: 100; /* Ensures it sits above other content */
+}
+
+/* Lightbox Container */
+.box {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px; /* Adjust based on your preference */
+    width: 90%; /* Responsive width */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    background: #fff; /* Light background to contrast the dark overlay */
+    z-index: 101; /* Ensures it sits above the .backdrop */
+    text-align: center; /* Center the content */
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #e00000; /* Red color matching your header */
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Styling for Gallery Images */
+#gallery #photo a img {
+    width: 100%; /* Responsive images within the lightbox */
+    max-width: 400px; /* Adjust based on your gallery layout */
+    margin-bottom: 20px; /* Space below images */
+}
+
+/* Lightbox Image Style */
+.box img {
+    max-width: 100%; /* Ensures image is not larger than the box */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
 .info-box {
     position: fixed; /* or absolute */
     top: 50%;

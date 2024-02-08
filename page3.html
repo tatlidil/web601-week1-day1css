@@ -27,18 +27,23 @@
                         <legend>Family qualification form.</legend>
                         <label>Enter your full name</label>
                         <input type="text" name="name">
-                        <label>Enter your email</label>
-                        <input type="email" name="email">
-                        <label>Enter your phone</label>
-                        <input type="text" name="phone">
                         <label>Did you adopt pet before?</label>
                         <input type="radio" name="petcheck" value="yes">Yes
                         <input type="radio" name="petcheck" value="no">No
-                        <label>How should we contact you?</label>
-                        <select>
-                            <option>Email</option>
-                            <option>Phone</option>
+                        <label for="contactOption">How should we contact you?</label>
+                        <select id="contactOption">
+                            <option id="selectInstruction" value="">Please select a contact method...</option>
+                            <option id="emailOption" value="email">Email</option>
+                            <option id="phoneOption" value="phone">Phone</option>
                         </select>
+                        <div id="emailInput" style="display: none;">
+                            <label for="email">Your Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div id="phoneInput" style="display: none;">
+                            <label for="phone">Your Phone:</label>
+                            <input type="text" id="phone" name="phone">
+                        </div>
                         <label>Tell us more about you and why do you decide adopt a pet?</label>
                         <textarea cols="30" rows="5"></textarea>
                         <input type="submit" value="Submit">
@@ -48,5 +53,7 @@
 
             <footer> &copy; Copyright 2020</footer>
         </div> 
+
+        <script src="script.js"></script>
     </body>
 </html>

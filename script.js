@@ -14,7 +14,9 @@ for (var i = 0; i < 10; i++) {
     imageList.push(listItem);
 }
 
+
 document.getElementById("album").innerHTML = imageList.join('');
+
 
 document.addEventListener('DOMContentLoaded', function() {
     var infoBox = document.getElementById('infoBox');
@@ -61,5 +63,31 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (selectedOption === 'phone') {
             phoneInput.style.display = 'block';
         }
+    });
+});
+
+$(document).ready(function(){
+    $('#album li img').click(function(){
+        // Open the lightbox
+        $('.backdrop').animate({'opacity':'.50'}, 300, 'linear').css('display', 'block');
+        $('.box').fadeIn();
+
+        // Clear existing content in the box
+        if ($('.box').find('img').length) {
+            $('.box img').remove(); // Remove current image if exists
+        }
+
+        // Clone the clicked image and append to the box
+        var img = $(this).clone();
+        img.css('width', '100%'); // Ensure the image fits the box
+        $('.box').append(img);
+    });
+
+    // Close the lightbox when clicking the close button or backdrop
+    $('.close, .backdrop').click(function(){
+        $('.backdrop').animate({'opacity':'0'}, 300, 'linear', function(){
+            $('.backdrop, .box').css('display', 'none');
+        });
+        $('.box').fadeOut();
     });
 });
